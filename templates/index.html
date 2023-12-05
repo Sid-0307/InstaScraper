@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='index.css') }}"
+    />
+
+    <title>Instagram Hashtag Viewer</title>
+  </head>
+  <body>
+    <form id="hashtagForm">
+      <input type="text" id="hashtagInput" placeholder="Enter Hashtag" /><br />
+      <input type="text" id="limitInput" placeholder="Enter limit" /><br />
+      <button type="button" onclick="fetchBot()">Scraper Bot</button>
+      <button type="button" onclick="fetchModule()">Scraper Module</button>
+    </form>
+    <div class="loader">
+      <img src="/static/loading.gif" alt="loader" />
+    </div>
+    <div class="container">
+      <div id="gridContainer"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
