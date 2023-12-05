@@ -5,7 +5,7 @@ body {
 }
 
 form {
-  margin-left: 37%;
+  margin-left: 40%;
   margin-top: 20px;
 }
 input {
@@ -48,7 +48,7 @@ button {
 }
 
 .loader {
-  margin-left: 20%;
+  margin-left: 23%;
   display: none;
 }
 .post {
